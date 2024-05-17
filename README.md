@@ -1,3 +1,7 @@
+Version mise à jour du README incluant les instructions spécifiques pour Debian et Kali Linux :
+
+---
+
 # Boîte à outils Alex
 
 Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
@@ -15,60 +19,78 @@ Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés
 
 ### Prérequis
 
-Assurez-vous d'avoir Python 3 installé. Vous pouvez le télécharger à partir de ce lien : [Télécharger Python](https://www.python.org/downloads/). Sinon utilisez les commandes suivantes :
+Assurez-vous d'avoir Python 3.11 installé et configurez un environnement virtuel. Voici les commandes spécifiques pour Debian et Kali Linux :
 
-```sh
-sudo pip update
-sudo pip install python3-pip
-```
+#### Installation sur Kali et Debian
 
+1. **Mettre à jour la liste des packages et installer `python3.11-venv`** :
+   ```sh
+   sudo apt update
+   sudo apt install -y python3.11-venv
+   ```
 ### Téléchargement du projet
 
-Vous pouvez télécharger la version zip depuis GitHub ou cloner le dépôt via la ligne de commande :
-
+3. **Vous pouvez télécharger la version zip depuis GitHub ou cloner le dépôt via la ligne de commande** :
 ```sh
 git clone https://github.com/Marlottony/Toolbox-Alex
 ```
+Enregistrer le fichier dans Documents.
 
 Après le téléchargement, changez de répertoire et installez les bibliothèques nécessaires pour exécuter le script correctement :
+2. **Créer et activer un environnement virtuel** :
+   ```sh
+   python3.11 -m venv ~/Toolbox-Alex-main/venv
+   source ~/Toolbox-Alex-main/venv/bin/activate
+   ```
 
-```sh
-cd ~/pentest-toolbox-alex/
-pip install -r requirements.txt
-```
+3. **Mettre à jour pip et installer les dépendances** :
+   ```sh
+   pip install --upgrade pip
+   pip install -r ~/Documents/Toolbox-Alex-main/requirements.txt
+   ```
+### Changement de répertoire et exécution du script
+
+1. **Changez de répertoire** :
+   ```sh
+   cd ~/Documents/Toolbox-Alex-main/Pentest-toolbox-alex
+   ```
+
+2. **Lancez le script avec Python** :
+   ```sh
+   python pentest-toolbox.py
+   ```
 
 ### Créer un Alias pour Accéder au Répertoire de N'importe Où
 
-Pour accéder facilement au répertoire `pentest-toolbox-alex` depuis n'importe où, suivez ces étapes :
+Pour accéder facilement au répertoire `Toolbox-Alex-main` depuis n'importe où, suivez ces étapes :
 
-1. Ouvrez votre fichier de configuration de shell (`~/.bashrc` ou `~/.zshrc`) :
+1. **Ouvrez votre fichier de configuration de shell (`~/.bashrc` ou `~/.zshrc`)** :
 
    ```sh
    nano ~/.bashrc   # Pour bash
    nano ~/.zshrc    # Pour zsh Fonctionne avec Kali
    ```
 
-2. Ajoutez l'alias suivant à la fin du fichier :
-
+2. **Ajoutez l'alias suivant à la fin du fichier** :
    ```sh
-   alias pentest-alex='cd ~/Toolbox\ Alex/pentest-toolbox/'
+   alias pentest-alex='cd ~/Documents/Toolbox-Alex-main && source ~/Toolbox-Alex/venv/bin/activate'
    ```
 
-3. Sauvegardez et fermez le fichier, puis rechargez la configuration de votre shell :
-
+3. **Sauvegardez et fermez le fichier, puis rechargez la configuration de votre shell** :
    ```sh
    source ~/.bashrc   # Pour bash
    source ~/.zshrc    # Pour zsh
    ```
 
-Maintenant, vous pouvez utiliser la commande `pentest-alex` pour accéder directement au répertoire `~/pentest-toolbox-alex/` depuis n'importe où.
+Maintenant, vous pouvez utiliser la commande `pentest-alex` pour accéder directement au répertoire `Toolbox-Alex` et activer l'environnement virtuel.
 
-## Utilisation
+### Utilisation
 
 Lancez simplement le script avec Python sans aucun paramètre :
 
 ```sh
-python pentest-toolbox-alex.py
+pentest-alex
+python pentest-toolbox.py
 ```
 
 Ensuite, choisissez une option et interagissez avec le menu.
