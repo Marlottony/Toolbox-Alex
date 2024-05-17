@@ -1,7 +1,3 @@
-Voici une version améliorée et professionnelle du README pour votre projet "Boîte à outils Alex", sans les emojis :
-
----
-
 # Boîte à outils Alex
 
 Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
