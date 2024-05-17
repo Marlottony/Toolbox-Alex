@@ -2,8 +2,6 @@
 
 Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
 
-## Captures d'écran & fonctionnalités
-
 ### Fonctionnalités principales
 
 - **Reconnaissance** : Whois, recherche de CVE, données DNS, informations sur les certificats HTTP/S.
@@ -17,7 +15,7 @@ Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés
 
 ### Prérequis
 
-Assurez-vous d'avoir Python 3 installé. Vous pouvez le télécharger à partir de ce lien : [Télécharger Python](https://www.python.org/downloads/). Ou utilisez les commandes suivantes :
+Assurez-vous d'avoir Python 3 installé. Vous pouvez le télécharger à partir de ce lien : [Télécharger Python](https://www.python.org/downloads/). Sinon utilisez les commandes suivantes :
 
 ```sh
 sudo pip update
