@@ -53,7 +53,7 @@ Pour accéder facilement au répertoire `pentest-toolbox-alex` depuis n'importe 
 2. Ajoutez l'alias suivant à la fin du fichier :
 
    ```sh
-   alias pentest-alex='cd ~/pentest-toolbox-alex/'
+   alias pentest-alex='cd ~/Toolbox\ Alex/pentest-toolbox/'
    ```
 
 3. Sauvegardez et fermez le fichier, puis rechargez la configuration de votre shell :
