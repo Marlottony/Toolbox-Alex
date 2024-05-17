@@ -1,20 +1,22 @@
-# Toolbox Alex
+Voici une version améliorée et professionnelle du README pour votre projet "Boîte à outils Alex", sans les emojis :
 
-Toolbox Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
+---
 
-## 📸 Captures d'écran & fonctionnalités
+# Boîte à outils Alex
 
-### Fonctionnalités principales :
+Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
 
-- **Effectuer un scan web**
-- **Générer un rapport de vulnérabilité PDF sur une cible, avec des recommandations**
+### Fonctionnalités principales
 
-## 🛠️ Installation
+- Effectuer un scan web
+- Générer un rapport de vulnérabilité PDF sur une cible, avec des recommandations
+
+## Installation
 
 ### Prérequis
 
-Assurez-vous d'avoir Python 3 installé. Vous pouvez le télécharger à partir de ce lien : [Télécharger Python](https://www.python.org/downloads/).
-Ou avec la comment
+Assurez-vous d'avoir Python 3 installé. Vous pouvez le télécharger à partir de ce lien : [Télécharger Python](https://www.python.org/downloads/). Ou utilisez les commandes suivantes :
+
 ```sh
 sudo pip update
 sudo pip install python3-pip
@@ -35,7 +37,7 @@ cd pentest-toolbox-alex/
 pip install -r requirements.txt
 ```
 
-## 📈 Utilisation
+## Utilisation
 
 Lancez simplement le script avec Python sans aucun paramètre :
 
@@ -45,7 +47,7 @@ python pentest-toolbox-alex.py
 
 Ensuite, choisissez une option et interagissez avec le menu.
 
-```plaintext
+```
  _____        _ _              _____ _         
 |_   _|__ ___| | |_ ___ _ _   |  _  | |___ _ _ 
   | || . | . | | . | . |_'_|  |     | | -_|_'_|
@@ -59,59 +61,52 @@ Ensuite, choisissez une option et interagissez avec le menu.
     [ 4 ] - OSINT
     [ 5 ] - Générer un rapport PDF sur la cible
     [ 6 ] - Générer une commande de shell inversé
-
 ```
 
-Vous aurez accès à plusieurs sous-menus.
+### Sous-menus
 
-### [ 1 ] - Reconnaissance 
+#### [ 1 ] - Reconnaissance
 
-    [ a ] - Requête Whois de base
-    [ b ] - Rechercher un CVE
-    [ c ] - Obtenir des données DNS sur un domaine
-    [ d ] - Obtenir des informations sur un certificat HTTPS
-    [ e ] - Extrait toutes les identifications CVE d'une URL spécifique
+- [ a ] - Requête Whois de base
+- [ b ] - Rechercher un CVE
+- [ c ] - Obtenir des données DNS sur un domaine
+- [ d ] - Obtenir des informations sur un certificat HTTPS
+- [ e ] - Extraire toutes les identifications CVE d'une URL spécifique
+- [ z ] - Retour
 
+#### [ 2 ] - Balayage
 
-- z - Retour
+- [ a ] - Scan de ports Nmap
+- [ b ] - Scan Nikto
+- [ c ] - Découverte d'URL avec Dirbuster
+- [ z ] - Retour
 
-### [ 2 ] - Balayage
+#### [ 3 ] - Exploitation
 
-    [ a ] - Scan de ports Nmap
-    [ b ] - Scan Nikto
-    [ c ] - Découverte d'URL avec Dirbuster
+- [ a ] - Recherche de vulnérabilités et d'exploits sur un service
+- [ z ] - Retour
 
-    [ z ] - Retour
+#### [ 4 ] - OSINT
 
+- [ a ] - Recherche de noms d'utilisateur sur les réseaux sociaux
+- [ b ] - Recherche inversée de numéro de téléphone
+- [ c ] - Générateur d'identité fictive
+- [ d ] - Recherche avec Dorks
+- [ z ] - Retour
 
-### [ 3 ] - Exploitation
+## Auteurs
 
-    [ a ] - Recherche de vulnérabilités et d'exploits sur un service
-
-    [ z ] - Retour
-
-
-### [ 4 ] - OSINT
-
-    [ a ] - Recherche de noms d'utilisateur sur les réseaux sociaux
-    [ b ] - Recherche inversée de numéro de téléphone
-    [ c ] - Générateur d'identité fictive
-    [ d ] - Recherche avec Dorks
-
-    [ z ] - Retour
-
-
-## ✍️ Auteurs
-
-- **Marlottony** - (https://github.com/Marlottony)
+[Marlottony](https://github.com/Marlottony)
 
 ## À propos
 
-Toolbox Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
+Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
 
 ## Ressources
 
 - **Langage** : Python
-- **Dépôt GitHub** : [pentest-toolbox](https://github.com/hashgrem/pentest-toolbox)
+- **Dépôt GitHub** : [pentest-toolbox](https://github.com/Marlottony/Toolbox-Alex)
 
 ---
+
+Cela devrait répondre à vos besoins et fournir un document clair, professionnel et bien structuré pour votre projet.
