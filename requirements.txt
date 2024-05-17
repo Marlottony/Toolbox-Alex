@@ -1,0 +1,10 @@
+requests
+requests-html
+BeautifulSoup4
+google
+python-nmap
+fpdf2
+fpdf==1.7.2
+python-whois
+Faker
+colorama
