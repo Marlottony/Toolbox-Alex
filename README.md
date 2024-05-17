@@ -2,10 +2,16 @@
 
 Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés sur une cible, comprenant de nombreux outils relatifs au pentest, à l'équipe rouge et à l'équipe bleue.
 
+## Captures d'écran & fonctionnalités
+
 ### Fonctionnalités principales
 
-- Effectuer un scan web
-- Générer un rapport de vulnérabilité PDF sur une cible, avec des recommandations
+- **Reconnaissance** : Whois, recherche de CVE, données DNS, informations sur les certificats HTTP/S.
+- **Numérisation** : Scan de ports Nmap, analyse des failles Nikto, découverte d'URL Dirbuster.
+- **Exploitation** : Identification et exploitation des failles de sécurité.
+- **OSINT** : Recherche de noms d'utilisateur, de numéros de téléphone, générateur d'identités, recherche de dorks.
+- **Génération de rapport** : Rapport PDF détaillé des vulnérabilités avec recommandations.
+- **Outils divers** : Générateur de shell reverse one-liner.
 
 ## Installation
 
@@ -29,9 +35,35 @@ git clone https://github.com/Marlottony/Toolbox-Alex
 Après le téléchargement, changez de répertoire et installez les bibliothèques nécessaires pour exécuter le script correctement :
 
 ```sh
-cd pentest-toolbox-alex/
+cd ~/pentest-toolbox-alex/
 pip install -r requirements.txt
 ```
+
+### Créer un Alias pour Accéder au Répertoire de N'importe Où
+
+Pour accéder facilement au répertoire `pentest-toolbox-alex` depuis n'importe où, suivez ces étapes :
+
+1. Ouvrez votre fichier de configuration de shell (`~/.bashrc` ou `~/.zshrc`) :
+
+   ```sh
+   nano ~/.bashrc   # Pour bash
+   nano ~/.zshrc    # Pour zsh
+   ```
+
+2. Ajoutez l'alias suivant à la fin du fichier :
+
+   ```sh
+   alias pentest-alex='cd ~/pentest-toolbox-alex/'
+   ```
+
+3. Sauvegardez et fermez le fichier, puis rechargez la configuration de votre shell :
+
+   ```sh
+   source ~/.bashrc   # Pour bash
+   source ~/.zshrc    # Pour zsh
+   ```
+
+Maintenant, vous pouvez utiliser la commande `pentest-alex` pour accéder directement au répertoire `~/pentest-toolbox-alex/` depuis n'importe où.
 
 ## Utilisation
 
@@ -61,6 +93,7 @@ Ensuite, choisissez une option et interagissez avec le menu.
 
 ### Sous-menus
 
+```
 #### [ 1 ] - Reconnaissance
 
 - [ a ] - Requête Whois de base
@@ -69,19 +102,22 @@ Ensuite, choisissez une option et interagissez avec le menu.
 - [ d ] - Obtenir des informations sur un certificat HTTPS
 - [ e ] - Extraire toutes les identifications CVE d'une URL spécifique
 - [ z ] - Retour
-
+```
+```
 #### [ 2 ] - Balayage
 
 - [ a ] - Scan de ports Nmap
 - [ b ] - Scan Nikto
 - [ c ] - Découverte d'URL avec Dirbuster
 - [ z ] - Retour
-
+```
+```
 #### [ 3 ] - Exploitation
 
 - [ a ] - Recherche de vulnérabilités et d'exploits sur un service
 - [ z ] - Retour
-
+```
+```
 #### [ 4 ] - OSINT
 
 - [ a ] - Recherche de noms d'utilisateur sur les réseaux sociaux
@@ -89,7 +125,7 @@ Ensuite, choisissez une option et interagissez avec le menu.
 - [ c ] - Générateur d'identité fictive
 - [ d ] - Recherche avec Dorks
 - [ z ] - Retour
-
+```
 ## Auteurs
 
 [Marlottony](https://github.com/Marlottony)
@@ -102,7 +138,3 @@ Boîte à outils Alex est un outil permettant d'effectuer des scans automatisés
 
 - **Langage** : Python
 - **Dépôt GitHub** : [pentest-toolbox](https://github.com/Marlottony/Toolbox-Alex)
-
----
-
-Cela devrait répondre à vos besoins et fournir un document clair, professionnel et bien structuré pour votre projet.
