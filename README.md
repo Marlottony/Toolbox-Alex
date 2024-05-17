@@ -47,7 +47,7 @@ Pour accéder facilement au répertoire `pentest-toolbox-alex` depuis n'importe 
 
    ```sh
    nano ~/.bashrc   # Pour bash
-   nano ~/.zshrc    # Pour zsh
+   nano ~/.zshrc    # Pour zsh Fonctionne avec Kali
    ```
 
 2. Ajoutez l'alias suivant à la fin du fichier :
