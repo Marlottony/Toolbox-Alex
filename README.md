@@ -37,7 +37,6 @@ git clone https://github.com/Marlottony/Toolbox-Alex
 Enregistrer le fichier dans Documents.
 
 Après le téléchargement, changez de répertoire et installez les bibliothèques nécessaires pour exécuter le script correctement :
-
 2. **Créer et activer un environnement virtuel** :
    ```sh
    python3.11 -m venv ~/Toolbox-Alex-main/venv
